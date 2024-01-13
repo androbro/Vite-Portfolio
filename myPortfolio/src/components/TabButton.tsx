@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -6,7 +5,7 @@ const variants = {
   active: { width: "calc(100% - 0.75rem)" },
 };
 
-const TabButton = ({ active, selectTab, children }) => {
+export default function TabButton({active, selectTab, children}: {active: boolean, selectTab:() => void, children:string[]} ){
   const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
 
   return (
@@ -21,6 +20,4 @@ const TabButton = ({ active, selectTab, children }) => {
       ></motion.div>
     </button>
   );
-};
-
-export default TabButton;
+}
