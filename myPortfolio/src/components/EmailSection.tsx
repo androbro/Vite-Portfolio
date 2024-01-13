@@ -1,14 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 
-const EmailSection = () => {
+export default function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+	//todo: fix any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     const data = {
       email: e.target.email.value,
@@ -31,7 +32,7 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // const resData = await response.json();
 
     if (response.status === 200) {
       console.log("Message sent.");
@@ -56,11 +57,11 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
+          <Link to="github.com">
+            <img src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <Link to="linkedin.com">
+            <img src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
@@ -128,6 +129,4 @@ const EmailSection = () => {
       </div>
     </section>
   );
-};
-
-export default EmailSection;
+}
