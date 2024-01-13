@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import NavLink from "./NavLink";
+import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -20,14 +19,14 @@ const navLinks = [
   },
 ];
 
-const Navbar = () => {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
-          href={"/"}
+          to={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           LOGO
@@ -53,7 +52,7 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <Link to={link.path} title={link.title} />
               </li>
             ))}
           </ul>
@@ -62,6 +61,4 @@ const Navbar = () => {
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
-};
-
-export default Navbar;
+}
