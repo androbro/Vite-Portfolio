@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import GithubIcon from "../images/icons/github-icon.svg";
+import LinkedinIcon from "../images/icons/linkedin-icon.svg";
 import { Link } from "react-router-dom";
 
 export default function EmailSection() {
