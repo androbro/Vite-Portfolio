@@ -8,10 +8,10 @@
     "tw": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "api": "json-server db.json --routes routes.json --no-cors=false",
     "start": "concurrently \"npm run tw\" \"npm run api\" \"npm run dev\"",
-    "build": "npm install vite && vite build",
+    "build": "npm run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "vite": "vite"
+    "vite": "vite build"
   },
   "dependencies": {
     "react": "^18.2.0",
