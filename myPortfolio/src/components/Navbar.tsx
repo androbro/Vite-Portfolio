@@ -3,8 +3,9 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import { Link } from "react-router-dom";
+import { Route } from "../types/Entities";
 
-const navLinks = [
+const navLinks: Route[] = [
   {
     title: "About",
     path: "#about",

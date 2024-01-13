@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { Route } from "../types/Entities";
 
-export default function MenuOverlay(links: Array<{ title: string; path: string }>) {
+export default function MenuOverlay({ links }: { links: Route[] }) {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
