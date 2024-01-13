@@ -1,4 +1,4 @@
-"use client";
+
 import { useState } from "react";
 import GithubIcon from "../images/icons/github-icon.svg";
 import LinkedinIcon from "../images/icons/linkedin-icon.svg";
