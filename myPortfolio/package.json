@@ -14,14 +14,10 @@
     "vite": "vite"
   },
   "dependencies": {
-    "react": "^18.2.0",
     "react-countup": "^6.5.0",
-    "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
     "ts-node": "^10.9.2",
-    "vite": "^5.0.11"
-  },
-  "devDependencies": {
+    "vite": "^5.0.11",
     "@heroicons/react": "^2.0.18",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
@@ -41,5 +37,7 @@
     "resend": "^1.0.0",
     "tailwindcss": "3.3.3",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
   }
 }
