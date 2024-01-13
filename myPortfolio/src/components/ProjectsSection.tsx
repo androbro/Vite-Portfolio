@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import { proj1, proj2, proj3, proj4, proj5, proj6 } from "../images";
 
 export default function ProjectsSection() {
   const [tag, setTag] = useState("All");
@@ -74,7 +75,7 @@ const projectsData = [
     id: 1,
     title: "React Portfolio Website",
     description: "Project 1 description",
-    image: "/images/projects/1.png",
+    image: proj1,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -83,7 +84,7 @@ const projectsData = [
     id: 2,
     title: "Potography Portfolio Website",
     description: "Project 2 description",
-    image: "/images/projects/2.png",
+    image: proj2,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -92,7 +93,7 @@ const projectsData = [
     id: 3,
     title: "E-commerce Application",
     description: "Project 3 description",
-    image: "/images/projects/3.png",
+    image: proj3,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -101,7 +102,7 @@ const projectsData = [
     id: 4,
     title: "Food Ordering Application",
     description: "Project 4 description",
-    image: "/images/projects/4.png",
+    image: proj4,
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -110,7 +111,7 @@ const projectsData = [
     id: 5,
     title: "React Firebase Template",
     description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    image: proj5,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -119,7 +120,7 @@ const projectsData = [
     id: 6,
     title: "Full-stack Roadmap",
     description: "Project 5 description",
-    image: "/images/projects/6.png",
+    image: proj6,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
