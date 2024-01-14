@@ -71,10 +71,11 @@ export default function EmailSection() {
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form className="flex flex-col" id="form" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
                 htmlFor="email"
+								id="email-label"
                 className="text-white block mb-2 text-sm font-medium"
               >
                 Your email
@@ -91,6 +92,7 @@ export default function EmailSection() {
             <div className="mb-6">
               <label
                 htmlFor="subject"
+								id="subject-label"
                 className="text-white block text-sm mb-2 font-medium"
               >
                 Subject
@@ -107,6 +109,7 @@ export default function EmailSection() {
             <div className="mb-6">
               <label
                 htmlFor="message"
+								id="message-label"
                 className="text-white block text-sm mb-2 font-medium"
               >
                 Message
@@ -120,6 +123,7 @@ export default function EmailSection() {
             </div>
             <button
               type="submit"
+							id="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
               Send Message

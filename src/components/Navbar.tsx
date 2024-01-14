@@ -4,21 +4,6 @@ import MenuOverlay from "./MenuOverlay";
 import { Link } from "react-router-dom";
 import { Route } from "../types/Entities";
 
-const navLinks: Route[] = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
-
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -62,3 +47,19 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
+const navLinks: Route[] = [
+  {
+    title: "About",
+    path: "#about",
+  },
+  {
+    title: "Projects",
+    path: "#projects",
+  },
+  {
+    title: "Contact",
+    path: "#contact",
+  },
+];
