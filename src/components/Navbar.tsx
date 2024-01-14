@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import { Link } from "react-router-dom";
 import { Route } from "../types/Entities";
+import { logo } from "../images";
 
 export default function Navbar() {
 	const [navbarOpen, setNavbarOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Navbar() {
 					to={"/"}
 					className="text-2xl md:text-5xl text-white font-semibold"
 				>
-					LOGO
+					<img src={logo} width={50} height={50} />
 				</Link>
 				<div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (
