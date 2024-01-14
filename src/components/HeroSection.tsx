@@ -13,7 +13,7 @@ export default function HeroSection() {
 					transition={{ duration: 0.5 }}
 					className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
 				>
-					<div className="text-white mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-5xl lg:leading-normal font-extrabold">
+					<div className="hero-title">
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
 							Hello, I&apos;m{" "}
 						</span>
