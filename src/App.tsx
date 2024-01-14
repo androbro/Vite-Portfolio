@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
 	return (
 		<main
-			style={{ overflow: "hidden", padding: "1em" }}
+			style={{ overflow: "hidden" }}
 			className="flex min-h-screen flex-col bg-[#121212]"
 		>
 			<Navbar />
