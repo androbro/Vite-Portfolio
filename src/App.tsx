@@ -10,14 +10,11 @@ import "./App.css";
 function App() {
 	return (
 		<main
-			style={{ overflow: "hidden" }}
+			style={{ overflow: "hidden", padding: "1em" }}
 			className="flex min-h-screen flex-col bg-[#121212]"
 		>
 			<Navbar />
-			<div
-				style={{ padding: "1em" }}
-				className="container mt-24 mx-auto px-12 py-4"
-			>
+			<div className="container mt-24 mx-auto px-12 py-4 sm:px-6">
 				<HeroSection />
 				<AchievementsSection />
 				<AboutSection />
