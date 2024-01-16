@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 export default function EmailSection() {
 	const [emailSubmitted, setEmailSubmitted] = useState(false);
-
 	//todo: fix any
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const handleSubmit = async (e: any) => {

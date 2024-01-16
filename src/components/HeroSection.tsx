@@ -1,6 +1,6 @@
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
 import { profileImage } from "../images";
 
 export default function HeroSection() {
@@ -40,7 +40,12 @@ export default function HeroSection() {
 					</p>
 					<div>
 						<Link
-							to="/#contact"
+							activeClass="active"
+							to="contact"
+							spy={true}
+							smooth={true}
+							offset={50}
+							duration={500}
 							className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
 						>
 							Contact Me
