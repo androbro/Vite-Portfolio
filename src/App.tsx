@@ -1,4 +1,3 @@
-import { Element } from "react-scroll";
 import "./App.css";
 import AboutSection from "./components/AboutSection";
 import AchievementsSection from "./components/AchievementsSection";
@@ -25,9 +24,6 @@ function App() {
 					<EmailSection />
 				</div>
 				<Footer />
-				<Element name="test1" className="element">
-					test 1
-				</Element>
 			</main>
 		</>
 	);
