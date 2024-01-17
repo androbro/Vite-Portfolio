@@ -1,0 +1,29 @@
+{
+	"projects": [
+		{
+			"id": "1",
+			"title": "Project 1",
+			"tag": [
+				"All",
+				"Web"
+			],
+			"description": "This is a project description",
+			"shortDescription": "This is a short description",
+			"image": "http://placehold.it/350x150",
+			"gitUrl": "http://www.google.com",
+			"previewUrl": "http://www.google.com"
+		},
+		{
+			"name": "Project 2",
+			"tag": [
+				"All",
+				"Web"
+			],
+			"description": "This is a project description",
+			"shortDescription": "This is a short description",
+			"image": "http://placehold.it/350x150",
+			"gitUrl": "http://www.google.com",
+			"previewUrl": "http://www.google.com"
+		}
+	]
+}

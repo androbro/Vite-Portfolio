@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
+import AvatarUploadPage from "./screens/Project";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			>
 				<Navbar />
 				<div className="container mt-24 mx-auto px-12 py-4 sm:px-6">
+					<AvatarUploadPage />
 					<HeroSection />
 					<AchievementsSection />
 					<AboutSection />
