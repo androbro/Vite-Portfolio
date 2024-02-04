@@ -80,12 +80,12 @@ const projectsData = [
 	},
 	{
 		id: 2,
-		title: "Potography Portfolio Website",
-		description: "Project 2 description",
+		title: "Zonder Honger Naar Bed",
+		description: "website for a non-profit organization in Belgium.",
 		imgName: "2",
 		tag: ["All", "Web"],
 		gitUrl: "/",
-		previewUrl: "/",
+		previewUrl: "https://zonderhongernaarbedaalst.be/home",
 	},
 	{
 		id: 3,
