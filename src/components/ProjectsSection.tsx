@@ -34,13 +34,13 @@ export default function ProjectsSection() {
 				/>
 				<ProjectTag
 					onClick={handleTagChange}
-					name="Web"
-					isSelected={tag === "Web"}
+					name="Personal"
+					isSelected={tag === "Personal"}
 				/>
 				<ProjectTag
 					onClick={handleTagChange}
-					name="Mobile"
-					isSelected={tag === "Mobile"}
+					name="Commercial"
+					isSelected={tag === "Commercial"}
 				/>
 			</div>
 			<ul ref={ref} className="grid md:grid-cols-3 gap-12 md:gap-8">
@@ -74,16 +74,16 @@ const projectsData = [
 		description:
 			"My official portfolio website built with Vite and TailwindCSS.",
 		imgName: "1",
-		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		tag: ["All", "Personal"],
+		gitUrl: "https://github.com/androbro/Vite-Portfolio",
+		previewUrl: "https://www.devulderk.com/",
 	},
 	{
 		id: 2,
 		title: "Zonder Honger Naar Bed",
 		description: "website for a non-profit organization in Belgium.",
 		imgName: "2",
-		tag: ["All", "Web"],
+		tag: ["All", "Personal"],
 		gitUrl: "/",
 		previewUrl: "https://zonderhongernaarbedaalst.be/home",
 	},
@@ -92,7 +92,7 @@ const projectsData = [
 		title: "E-commerce Application",
 		description: "Project 3 description",
 		imgName: "3",
-		tag: ["All", "Web"],
+		tag: ["All", "Commercial"],
 		gitUrl: "/",
 		previewUrl: "/",
 	},
@@ -101,7 +101,7 @@ const projectsData = [
 		title: "Food Ordering Application",
 		description: "Project 4 description",
 		imgName: "4",
-		tag: ["All", "Mobile"],
+		tag: ["All", "Commercial"],
 		gitUrl: "/",
 		previewUrl: "/",
 	},
@@ -110,7 +110,7 @@ const projectsData = [
 		title: "React Firebase Template",
 		description: "Authentication and CRUD operations",
 		imgName: "5",
-		tag: ["All", "Web"],
+		tag: ["All", "Commercial"],
 		gitUrl: "/",
 		previewUrl: "/",
 	},
@@ -119,7 +119,7 @@ const projectsData = [
 		title: "Full-stack Roadmap",
 		description: "Project 5 description",
 		imgName: "6",
-		tag: ["All", "Web"],
+		tag: ["All", "Commercial"],
 		gitUrl: "/",
 		previewUrl: "/",
 	},
