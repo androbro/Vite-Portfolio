@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import { proj1, proj2, proj3, proj4, proj5, proj6 } from "../images";
 import NewProjectCard from "./NewProjectCard";
 
 export default function ProjectsSection() {
@@ -44,7 +43,7 @@ export default function ProjectsSection() {
 					isSelected={tag === "Mobile"}
 				/>
 			</div>
-			<ul ref={ref} className="grid md:grid-cols-3 gap-12 md:gap-20">
+			<ul ref={ref} className="grid md:grid-cols-3 gap-12 md:gap-8">
 				{filteredProjects.map((project, index) => (
 					<motion.li
 						key={index}
@@ -57,7 +56,7 @@ export default function ProjectsSection() {
 							key={project.id}
 							title={project.title}
 							description={project.description}
-							imgUrl={project.image}
+							imgName={project.imgName}
 							gitUrl={project.gitUrl}
 							previewUrl={project.previewUrl}
 						/>
@@ -74,7 +73,7 @@ const projectsData = [
 		title: "React Portfolio Website",
 		description:
 			"My official portfolio website built with Vite and TailwindCSS.",
-		image: proj1,
+		imgName: "1",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",
@@ -83,7 +82,7 @@ const projectsData = [
 		id: 2,
 		title: "Potography Portfolio Website",
 		description: "Project 2 description",
-		image: proj2,
+		imgName: "2",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",
@@ -92,7 +91,7 @@ const projectsData = [
 		id: 3,
 		title: "E-commerce Application",
 		description: "Project 3 description",
-		image: proj3,
+		imgName: "3",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",
@@ -101,7 +100,7 @@ const projectsData = [
 		id: 4,
 		title: "Food Ordering Application",
 		description: "Project 4 description",
-		image: proj4,
+		imgName: "4",
 		tag: ["All", "Mobile"],
 		gitUrl: "/",
 		previewUrl: "/",
@@ -110,7 +109,7 @@ const projectsData = [
 		id: 5,
 		title: "React Firebase Template",
 		description: "Authentication and CRUD operations",
-		image: proj5,
+		imgName: "5",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",
@@ -119,7 +118,7 @@ const projectsData = [
 		id: 6,
 		title: "Full-stack Roadmap",
 		description: "Project 5 description",
-		image: proj6,
+		imgName: "6",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",

@@ -1,28 +1,55 @@
 import { Link } from "react-router-dom";
 import "../styles/ProjectCard.css";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
 
 export default function NewProjectCard({
-	imgUrl,
+	imgName,
 	title,
 	description,
 	gitUrl,
 	previewUrl,
 }: {
-	imgUrl: string;
+	imgName: string;
 	title: string;
 	description: string;
 	gitUrl: string;
 	previewUrl: string;
 }) {
+	const [responsiveImgUrl, setResponsiveImgUrl] = useState(imgName);
+
+	useEffect(() => {
+		function handleResize() {
+			let suffix = "";
+			if (window.innerWidth <= 640) {
+				suffix = "-sm";
+			} else if (window.innerWidth <= 1024) {
+				suffix = "-md";
+			} else if (window.innerWidth <= 1280) {
+				suffix = "-lg";
+			} else if (window.innerWidth <= 1536) {
+				suffix = "-xl";
+			} else {
+				suffix = "-xxl";
+			}
+			setResponsiveImgUrl(imgName + suffix);
+		}
+
+		window.addEventListener("resize", handleResize);
+		handleResize(); // call the function initially to set the image URL
+
+		// cleanup function
+		return () => window.removeEventListener("resize", handleResize);
+	}, [imgName]);
+
 	const backgroundImageStyle = {
-		backgroundImage: `url(${imgUrl})`,
+		backgroundImage: `url(/src/images/projects/${imgName}/${responsiveImgUrl}.png)`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
 	};
 
-	console.log(imgUrl);
+	console.log(responsiveImgUrl);
 
 	return (
 		<div className="card">
