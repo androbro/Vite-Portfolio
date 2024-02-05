@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../styles/ProjectCard.css";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
-import { proj1 } from "../images";
+import * as images from "../images";
 
 export default function NewProjectCard({
 	imgName,
@@ -44,8 +44,7 @@ export default function NewProjectCard({
 	}, [imgName]);
 
 	const backgroundImageStyle = {
-		// backgroundImage: `url(/src/images/projects/${imgName}/${responsiveImgUrl}.png)`,
-		backgroundImage: `url(${proj1})`,
+		backgroundImage: `url(${images})`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
