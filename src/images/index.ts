@@ -3,4 +3,6 @@ import heroImage from "./hero-image.png";
 import aboutImage from "./about-image.png";
 import logo from "./logo.png";
 
-export { profileImage, heroImage, aboutImage, logo };
+import proj1 from "./projects/1/1-xxl.png";
+
+export { profileImage, heroImage, aboutImage, logo,proj1 };
