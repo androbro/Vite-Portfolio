@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import NewProjectCard from "./NewProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
 	const [tag, setTag] = useState("All");
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
 						animate={isInView ? "animate" : "initial"}
 						transition={{ duration: 0.3, delay: index * 0.4 }}
 					>
-						<NewProjectCard
+						<ProjectCard
 							key={project.id}
 							title={project.title}
 							description={project.description}
@@ -92,33 +92,6 @@ const projectsData = [
 		title: "E-commerce Application",
 		description: "Project 3 description",
 		imgName: "proj3",
-		tag: ["All", "Commercial"],
-		gitUrl: "/",
-		previewUrl: "/",
-	},
-	{
-		id: 4,
-		title: "Food Ordering Application",
-		description: "Project 4 description",
-		imgName: "proj4",
-		tag: ["All", "Commercial"],
-		gitUrl: "/",
-		previewUrl: "/",
-	},
-	{
-		id: 5,
-		title: "React Firebase Template",
-		description: "Authentication and CRUD operations",
-		imgName: "proj5",
-		tag: ["All", "Commercial"],
-		gitUrl: "/",
-		previewUrl: "/",
-	},
-	{
-		id: 6,
-		title: "Full-stack Roadmap",
-		description: "Project 5 description",
-		imgName: "proj6",
 		tag: ["All", "Commercial"],
 		gitUrl: "/",
 		previewUrl: "/",
