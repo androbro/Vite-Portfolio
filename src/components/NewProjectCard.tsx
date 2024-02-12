@@ -23,15 +23,15 @@ export default function NewProjectCard({
 		function handleResize() {
 			let suffix = "";
 			if (window.innerWidth <= 640) {
-				suffix = "-sm";
+				suffix = "sm";
 			} else if (window.innerWidth <= 1024) {
-				suffix = "-md";
+				suffix = "md";
 			} else if (window.innerWidth <= 1280) {
-				suffix = "-lg";
+				suffix = "lg";
 			} else if (window.innerWidth <= 1536) {
-				suffix = "-xl";
+				suffix = "xl";
 			} else {
-				suffix = "-xxl";
+				suffix = "xxl";
 			}
 			setResponsiveImgUrl(imgName + suffix);
 		}
@@ -44,13 +44,14 @@ export default function NewProjectCard({
 	}, [imgName]);
 
 	const backgroundImageStyle = {
-		backgroundImage: `url(${images})`,
+		backgroundImage: `url(${images[responsiveImgUrl as keyof typeof images]})`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
 	};
 
 	console.log(responsiveImgUrl);
+	console.log(`url(${images[responsiveImgUrl as keyof typeof images]})`);
 
 	return (
 		<div className="card">
