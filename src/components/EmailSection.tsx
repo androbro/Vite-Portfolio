@@ -2,6 +2,7 @@ import { useState } from "react";
 import GithubIcon from "../images/icons/github-icon.svg";
 import LinkedinIcon from "../images/icons/linkedin-icon.svg";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 export default function EmailSection() {
 	const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -12,27 +13,29 @@ export default function EmailSection() {
 	//todo: fix any
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const handleSubmit = async (e: any) => {
-		// e.preventDefault();
-		// const values = {
-		// 	name: e.target.name.name,
-		// 	subject: e.target.subject.value,
-		// 	message: e.target.message.value,
-		// };
-		// emailjs
-		// 	.send(serviceId, templateId, values, {
-		// 		publicKey: publicKey,
-		// 	})
-		// 	.then(
-		// 		() => {
-		// 			console.log("SUCCESS!");
-		// 		},
-		// 		(error) => {
-		// 			console.log("FAILED...", error.text);
-		// 		}
-		// 	).then((response: any) => (if (response.status === 200) {
-		// 		console.log("Message sent.");
-		// 		setEmailSubmitted(true);
-		// 	});
+		e.preventDefault();
+		const values = {
+			name: e.target.name.name,
+			subject: e.target.subject.value,
+			message: e.target.message.value,
+		};
+		const templateParams = {
+			name: "James",
+			notes: "Check this out!",
+		};
+
+		emailjs
+			.send(serviceId, templateId, values, {
+				publicKey: publicKey,
+			})
+			.then(
+				(response) => {
+					console.log("SUCCESS!", response.status, response.text);
+				},
+				(err) => {
+					console.log("FAILED...", err);
+				}
+			);
 	};
 
 	return (
