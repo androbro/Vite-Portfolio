@@ -3,6 +3,7 @@ import GithubIcon from "../images/icons/github-icon.svg";
 import LinkedinIcon from "../images/icons/linkedin-icon.svg";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+//https://www.npmjs.com/package/@emailjs/browser
 
 export default function EmailSection() {
 	const [emailSubmitted, setEmailSubmitted] = useState(false);
