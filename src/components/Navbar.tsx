@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
 import { Link } from "react-router-dom";
-import { Route } from "../types/Entities";
 import { logo } from "../images";
 
 export default function Navbar() {
-	const [navbarOpen, setNavbarOpen] = useState(false);
+	// const [navbarOpen, setNavbarOpen] = useState(false);
 
 	return (
 		<nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -17,7 +13,7 @@ export default function Navbar() {
 				>
 					<img src={logo} width={50} height={50} />
 				</Link>
-				<div className="mobile-menu block md:hidden">
+				{/* <div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (
 						<button
 							onClick={() => setNavbarOpen(true)}
@@ -42,24 +38,24 @@ export default function Navbar() {
 							</li>
 						))}
 					</ul>
-				</div>
+				</div> */}
 			</div>
-			{navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+			{/* {navbarOpen ? <MenuOverlay links={navLinks} /> : null} */}
 		</nav>
 	);
 }
 
-const navLinks: Route[] = [
-	{
-		title: "About",
-		path: "#about",
-	},
-	{
-		title: "Projects",
-		path: "#projects",
-	},
-	{
-		title: "Contact",
-		path: "#contact",
-	},
-];
+// const navLinks: Route[] = [
+// 	{
+// 		title: "About",
+// 		path: "#about",
+// 	},
+// 	{
+// 		title: "Projects",
+// 		path: "#projects",
+// 	},
+// 	{
+// 		title: "Contact",
+// 		path: "#contact",
+// 	},
+// ];
