@@ -7,6 +7,11 @@ import emailjs from "@emailjs/browser";
 
 export default function EmailSection() {
 	const [emailSubmitted, setEmailSubmitted] = useState(false);
+	const [formValues, setFormValues] = useState({
+		name: "",
+		subject: "",
+		message: "",
+	});
 	const serviceId = "service_0sh9p0f";
 	const templateId = "template_ivof8u9";
 	const publicKey = "3E8JAZop3iqj6iyHO";
@@ -15,19 +20,23 @@ export default function EmailSection() {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const handleSubmit = async (e: any) => {
 		e.preventDefault();
-		const values = {
-			name: e.target.name.name,
-			subject: e.target.subject.value,
-			message: e.target.message.value,
-		};
 		emailjs
-			.send(serviceId, templateId, values, {
+			.send(serviceId, templateId, formValues, {
 				publicKey: publicKey,
 			})
 			.then(
 				(response) => {
 					console.log("SUCCESS!", response.status, response.text);
 					setEmailSubmitted(true);
+					//after 3 seconds, reset the form
+					setTimeout(() => {
+						setFormValues({
+							name: "",
+							subject: "",
+							message: "",
+						});
+						setEmailSubmitted(false);
+					}, 3000);
 				},
 				(err) => {
 					console.log("FAILED...", err);
@@ -77,11 +86,15 @@ export default function EmailSection() {
 							</label>
 							<input
 								name="email"
-								type="email"
-								id="email"
+								type="name"
+								id="name"
 								required
 								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 								placeholder="wizard@hogwarts.com"
+								value={formValues.name}
+								onChange={(e) =>
+									setFormValues({ ...formValues, name: e.target.value })
+								}
 							/>
 						</div>
 						<div className="mb-6">
@@ -99,6 +112,10 @@ export default function EmailSection() {
 								required
 								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 								placeholder="Just saying hi"
+								value={formValues.subject}
+								onChange={(e) =>
+									setFormValues({ ...formValues, subject: e.target.value })
+								}
 							/>
 						</div>
 						<div className="mb-6">
@@ -114,6 +131,10 @@ export default function EmailSection() {
 								id="message"
 								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 								placeholder="Let's talk about..."
+								value={formValues.message}
+								onChange={(e) =>
+									setFormValues({ ...formValues, message: e.target.value })
+								}
 							/>
 						</div>
 						<button
