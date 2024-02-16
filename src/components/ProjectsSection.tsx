@@ -85,15 +85,6 @@ const projectsData = [
 		imgName: "proj2",
 		tag: ["All", "Personal"],
 		gitUrl: "/",
-		previewUrl: "https://zonderhongernaarbedaalst.be/home",
-	},
-	{
-		id: 3,
-		title: "E-commerce Application",
-		description: "Project 3 description",
-		imgName: "proj3",
-		tag: ["All", "Commercial"],
-		gitUrl: "/",
 		previewUrl: "/",
 	},
 ];
