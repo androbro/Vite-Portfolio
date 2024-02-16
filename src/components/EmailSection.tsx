@@ -20,11 +20,6 @@ export default function EmailSection() {
 			subject: e.target.subject.value,
 			message: e.target.message.value,
 		};
-		const templateParams = {
-			name: "James",
-			notes: "Check this out!",
-		};
-
 		emailjs
 			.send(serviceId, templateId, values, {
 				publicKey: publicKey,
@@ -32,9 +27,11 @@ export default function EmailSection() {
 			.then(
 				(response) => {
 					console.log("SUCCESS!", response.status, response.text);
+					setEmailSubmitted(true);
 				},
 				(err) => {
 					console.log("FAILED...", err);
+					setEmailSubmitted(false);
 				}
 			);
 	};
