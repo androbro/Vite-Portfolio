@@ -71,13 +71,15 @@ const TAB_DATA = [
 			<div>
 				<ul className="grid grid-cols-2 list-disc pl-2">
 					<li>🟢React Native</li>
-					<li>🟢HTML5</li>
+					<li>🟢Next.js</li>
+					<li>🟢ViteJs</li>
+					<li>🟢React.js</li>
+					<li>🟢JavaScript</li>
 					<li>🟢Git</li>
 					<li>🟢Scrum</li>
-					<li>🟡React.js</li>
+					<li>🟢Redux</li>
+					<li>🟢HTML5</li>
 					<li>🟡Angular</li>
-					<li>🟡JavaScript</li>
-					<li>🟡Redux</li>
 					<li>🟡CSS</li>
 					<li>🟡C#</li>
 					<li>🟡.NET</li>
@@ -93,6 +95,7 @@ const TAB_DATA = [
 					<li>🟡GitHub</li>
 					<li>🟡WebAPI</li>
 					<li>🟡Entityframework</li>
+					<li>🟡Sentry</li>
 					<li>🔴Octopus Deploy</li>
 					<li>🔴TeamCity</li>
 					<li>🔴Docker</li>
