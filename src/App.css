@@ -47,3 +47,18 @@
 	/* border: 1px solid red !important; */
 	box-sizing: border-box;
 }
+
+.fade-in {
+	opacity: 0;
+	scale: 0.8;
+	animation: fadeIn linear forwards;
+	animation-timeline: view();
+	animation-range: entry;
+}
+
+@keyframes fadeIn {
+	to {
+		scale: 1;
+		opacity: 1;
+	}
+}
