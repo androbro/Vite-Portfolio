@@ -22,8 +22,8 @@ function App() {
 					<AboutSection />
 					<ProjectsSection />
 					<EmailSection />
+					<Footer />
 				</div>
-				<Footer />
 			</main>
 		</>
 	);
