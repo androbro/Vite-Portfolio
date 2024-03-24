@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "../styles/ProjectCard.css";
+import "./ProjectCard.css";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
-import * as images from "../images";
+import * as images from "../../images";
 
 export default function ProjectCard({
 	imgName,
