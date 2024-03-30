@@ -41,8 +41,8 @@ export default function AboutSection() {
 	}, []);
 
 	return (
-		<div>
-			<section className="text-white" id="about">
+		<div className="text-white">
+			<section id="about">
 				<div className="md:grid md:grid-cols-2 gap-8 items-center py-2 px-4 sm:py-16 xl:gap-16 xl:px-16">
 					<img className="fade-in" src={aboutImage} width={500} height={500} />
 					<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
@@ -88,53 +88,133 @@ export default function AboutSection() {
 					</div>
 				</div>
 			</section>
+			<section className="flex justify-center items-center" id="skills">
+				<div className="flex flex-col justify-center items-center">
+					<h2 className="text-4xl font-bold mb-8">Skills</h2>
+					<div>
+						<div className="scroller" data-speed="medium">
+							<ul className="scroller__inner">
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-react-original"></i>
+									<p className="icon-text text-sm">ReactJs</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-react-original"></i>
+									<p className="icon-text text-sm">Native</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-nextjs-plain"></i>
+									<p className="icon-text text-sm">NextJs</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-vitejs-plain"></i>
+									<p className="icon-text text-sm">ViteJs</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-vitest-plain"></i>
+									<p className="icon-text text-sm">Vitest</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-javascript-plain"></i>
+									<p className="icon-text text-sm">JavaScript</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-git-plain"></i>
+									<p className="icon-text text-sm">Git</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-redux-plain"></i>
+									<p className="icon-text text-sm">Redux</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-html5-plain"></i>
+									<p className="icon-text text-sm">HTML</p>
+								</li>
+							</ul>
+						</div>
+						<div className="scroller" data-speed="slow" data-direction="right">
+							<ul className="scroller__inner">
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-angularjs-plain"></i>
+									<p className="icon-text text-sm">Angular</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-css3-plain"></i>
+									<p className="icon-text text-sm">CSS</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-csharp-plain"></i>
+									<p className="icon-text text-sm">C#</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-dot-net-plain"></i>
+									<p className="icon-text text-sm">.NET</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-dotnetcore-plain"></i>
+									<p className="icon-text text-sm">.NET Core</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-confluence-plain"></i>
+									<p className="icon-text text-sm">Confluence</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-bamboo-plain"></i>
+									<p className="icon-text text-sm">Bamboo</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-bitbucket-plain"></i>
+									<p className="icon-text text-sm">Bitbucket</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-jira-plain"></i>
+									<p className="icon-text text-sm">JIRA</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-azuresqldatabase-plain"></i>
+									<p className="icon-text text-sm">SQL</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-github-plain"></i>
+									<p className="icon-text text-sm">GitHub</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-webapi-plain"></i>
+									<p className="icon-text text-sm">WebAPI</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-sentry-plain"></i>
+									<p className="icon-text text-sm">Sentry</p>
+								</li>
+								{/* 🟡Entityframework */}
+							</ul>
+						</div>
+						<div className="scroller" data-speed="fast">
+							<ul className="tag-list scroller__inner">
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-docker-plain"></i>
+									<p className="icon-text text-sm">Docker</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-mongodb-plain"></i>
+									<p className="icon-text text-sm">MongoDB</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-azure-plain"></i>
+									<p className="icon-text text-sm">Microsoft Azure</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-bootstrap-plain"></i>
+									<p className="icon-text text-sm">Bootstrap</p>
+								</li>
 
-			<div>
-				<div className="scroller" data-speed="fast">
-					<ul className="tag-list scroller__inner text-white">
-						<li>React Native</li>
-						<li>Next.js</li>
-						<li>ViteJs</li>
-						<li>React.js</li>
-						<li>JavaScript</li>
-						<li>Git</li>
-						<li>Scrum</li>
-						<li>Redux</li>
-						<li>HTML5</li>
-					</ul>
+								{/* <li>Octopus Deploy</li>
+						<li>TeamCity</li>*/}
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div className="scroller" data-speed="slow" data-direction="right">
-					<ul className="tag-list scroller__inner text-white">
-						<li>Angular</li>
-						<li>CSS</li>
-						<li>C#</li>
-						<li>.NET</li>
-						<li>.NET Core</li>
-						<li>ASP.NET MVC</li>
-						<li>ASP.NET</li>
-						<li>ASP.NET Razor</li>
-						<li>Confluence</li>
-						<li>Atlassian Bamboo</li>
-						<li>Bitbucket</li>
-						<li>JIRA</li>
-						<li>SQL</li>
-						<li>GitHub</li>
-						<li>WebAPI</li>
-						<li>Entityframework</li>
-						<li>Sentry</li>
-					</ul>
-				</div>
-				<div className="scroller" data-speed="fast">
-					<ul className="tag-list scroller__inner text-white">
-						<li>Octopus Deploy</li>
-						<li>TeamCity</li>
-						<li>Docker</li>
-						<li>MongoDB</li>
-						<li>Microsoft Azure</li>
-						<li>Bootstrap</li>
-					</ul>
-				</div>
-			</div>
+			</section>
 		</div>
 	);
 }
