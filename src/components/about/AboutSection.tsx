@@ -92,7 +92,12 @@ export default function AboutSection() {
 				<div className="flex flex-col justify-center items-center">
 					<h2 className="text-4xl font-bold mb-8">Skills</h2>
 					<div>
-						<div className="scroller" data-speed="medium">
+						<div
+							className="scroller background-border"
+							data-speed="medium"
+							border-color="green"
+							style={{ marginBottom: "1rem" }}
+						>
 							<ul className="scroller__inner">
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-react-original"></i>
@@ -148,7 +153,13 @@ export default function AboutSection() {
 								</li>
 							</ul>
 						</div>
-						<div className="scroller" data-speed="slow" data-direction="right">
+						<div
+							className="scroller  background-border"
+							data-speed="slow"
+							data-direction="right"
+							border-color="orange"
+							style={{ marginBottom: "1rem" }}
+						>
 							<ul className="scroller__inner">
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-jest-plain"></i>
@@ -241,7 +252,11 @@ export default function AboutSection() {
 								{/* 🟡Entityframework */}
 							</ul>
 						</div>
-						<div className="scroller" data-speed="medium">
+						<div
+							className="scroller background-border"
+							border-color="red"
+							data-speed="medium"
+						>
 							<ul className="tag-list scroller__inner">
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-docker-plain"></i>
