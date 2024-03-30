@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import ProjectTag from "../ProjectTag";
 import { motion, useInView } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import "./Line.css";
 
 export default function ProjectsSection() {
 	const [tag, setTag] = useState("All");
@@ -24,9 +23,6 @@ export default function ProjectsSection() {
 
 	return (
 		<>
-			<div>
-				<div className="line containerLine"></div>
-			</div>
 			<section id="projects">
 				<h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
 					My Projects

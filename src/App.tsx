@@ -1,5 +1,5 @@
 import "./App.css";
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/about/AboutSection";
 import AchievementsSection from "./components/AchievementsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
