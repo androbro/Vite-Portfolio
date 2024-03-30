@@ -1,11 +1,11 @@
 import "./App.css";
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/about/AboutSection";
 import AchievementsSection from "./components/AchievementsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
-import ProjectsSection from "./components/ProjectsSection";
+import ProjectsSection from "./components/project/ProjectsSection";
 
 function App() {
 	return (
