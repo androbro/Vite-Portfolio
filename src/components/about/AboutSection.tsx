@@ -241,7 +241,7 @@ export default function AboutSection() {
 								{/* 🟡Entityframework */}
 							</ul>
 						</div>
-						<div className="scroller" data-speed="fast">
+						<div className="scroller" data-speed="medium">
 							<ul className="tag-list scroller__inner">
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-docker-plain"></i>
