@@ -50,9 +50,6 @@ export default function ProjectCard({
 		backgroundRepeat: "no-repeat",
 	};
 
-	console.log(responsiveImgUrl);
-	console.log(`url(${images[responsiveImgUrl as keyof typeof images]})`);
-
 	return (
 		<div className="card">
 			<b style={backgroundImageStyle}></b>

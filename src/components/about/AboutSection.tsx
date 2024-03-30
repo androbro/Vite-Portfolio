@@ -4,7 +4,7 @@ import aboutImage from "../../images/about-image.png";
 import "./Skills.css";
 
 export default function AboutSection() {
-	const [tab, setTab] = useState("skills");
+	const [tab, setTab] = useState("education");
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [_, startTransition] = useTransition();
 
@@ -61,13 +61,6 @@ export default function AboutSection() {
 						</p>
 						<div className="flex flex-row justify-start mt-8">
 							<TabButton
-								selectTab={() => handleTabChange("skills")}
-								active={tab === "skills"}
-							>
-								{" "}
-								Skills{" "}
-							</TabButton>
-							<TabButton
 								selectTab={() => handleTabChange("education")}
 								active={tab === "education"}
 							>
@@ -80,6 +73,13 @@ export default function AboutSection() {
 							>
 								{" "}
 								Certifications{" "}
+							</TabButton>
+							<TabButton
+								selectTab={() => handleTabChange("events")}
+								active={tab === "events"}
+							>
+								{" "}
+								Events{" "}
 							</TabButton>
 						</div>
 						<div className="mt-4">
@@ -179,12 +179,12 @@ export default function AboutSection() {
 									<p className="icon-text text-sm">GitHub</p>
 								</li>
 								<li className="flex flex-col justify-center items-center">
-									<i className="devicon-webapi-plain"></i>
-									<p className="icon-text text-sm">WebAPI</p>
-								</li>
-								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-sentry-plain"></i>
 									<p className="icon-text text-sm">Sentry</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-android-plain"></i>
+									<p className="icon-text text-sm">Android</p>
 								</li>
 								{/* 🟡Entityframework */}
 							</ul>
@@ -221,43 +221,14 @@ export default function AboutSection() {
 
 const TAB_DATA = [
 	{
-		title: "Skills",
-		id: "skills",
+		title: "Events",
+		id: "events",
 		content: (
 			<div>
 				<ul className="grid grid-cols-2 list-disc pl-2">
-					<li>🟢React Native</li>
-					<li>🟢Next.js</li>
-					<li>🟢ViteJs</li>
-					<li>🟢React.js</li>
-					<li>🟢JavaScript</li>
-					<li>🟢Git</li>
-					<li>🟢Scrum</li>
-					<li>🟢Redux</li>
-					<li>🟢HTML5</li>
-					<li>🟡Angular</li>
-					<li>🟡CSS</li>
-					<li>🟡C#</li>
-					<li>🟡.NET</li>
-					<li>🟡.NET Core</li>
-					<li>🟡ASP.NET MVC</li>
-					<li>🟡ASP.NET</li>
-					<li>🟡ASP.NET Razor</li>
-					<li>🟡Confluence</li>
-					<li>🟡Atlassian Bamboo</li>
-					<li>🟡Bitbucket</li>
-					<li>🟡JIRA</li>
-					<li>🟡SQL</li>
-					<li>🟡GitHub</li>
-					<li>🟡WebAPI</li>
-					<li>🟡Entityframework</li>
-					<li>🟡Sentry</li>
-					<li>🔴Octopus Deploy</li>
-					<li>🔴TeamCity</li>
-					<li>🔴Docker</li>
-					<li>🔴MongoDB</li>
-					<li>🔴Microsoft Azure</li>
-					<li>🔴Bootstrap</li>
+					<li>CloudBrew 2022</li>
+					<li>.NET Conference 2023</li>
+					<li>BeJs React Paris 2024</li>
 				</ul>
 			</div>
 		),

@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 768px) {
 	.scroller {
-		max-width: 400px;
+		max-width: 600px;
 	}
 }
 
@@ -19,7 +19,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem;
-	font-size: 2rem; /* Adjust this value as needed */
+	font-size: 2rem;
 }
 
 .scroller[data-animated="true"] {
