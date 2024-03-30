@@ -99,6 +99,10 @@ export default function AboutSection() {
 									<p className="icon-text text-sm">ReactJs</p>
 								</li>
 								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-storybook-plain"></i>
+									<p className="icon-text text-sm">Storybook</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-react-original"></i>
 									<p className="icon-text text-sm">Native</p>
 								</li>
@@ -130,10 +134,38 @@ export default function AboutSection() {
 									<i className="devicon-html5-plain"></i>
 									<p className="icon-text text-sm">HTML</p>
 								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-openapi-plain"></i>
+									<p className="icon-text text-sm">OpenApi</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-typescript-plain"></i>
+									<p className="icon-text text-sm">TypeScript</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-vscode-plain"></i>
+									<p className="icon-text text-sm">VS Code</p>
+								</li>
 							</ul>
 						</div>
 						<div className="scroller" data-speed="slow" data-direction="right">
 							<ul className="scroller__inner">
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-jest-plain"></i>
+									<p className="icon-text text-sm">Jest</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-vercel-original"></i>
+									<p className="icon-text text-sm">Vercel</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-tailwindcss-original"></i>
+									<p className="icon-text text-sm">Tailwind</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-jira-plain"></i>
+									<p className="icon-text text-sm">Jira</p>
+								</li>
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-angularjs-plain"></i>
 									<p className="icon-text text-sm">Angular</p>
@@ -186,6 +218,26 @@ export default function AboutSection() {
 									<i className="devicon-android-plain"></i>
 									<p className="icon-text text-sm">Android</p>
 								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-gitlab-plain"></i>
+									<p className="icon-text text-sm">GitLab</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-ngrx-plain"></i>
+									<p className="icon-text text-sm">NgRx</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-nodejs-plain-wordmark"></i>
+									<p className="icon-text text-sm">NodeJs</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-eslint-plain"></i>
+									<p className="icon-text text-sm">EsLint</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-webflow-original"></i>
+									<p className="icon-text text-sm">WebFlow</p>
+								</li>
 								{/* 🟡Entityframework */}
 							</ul>
 						</div>
@@ -194,6 +246,10 @@ export default function AboutSection() {
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-docker-plain"></i>
 									<p className="icon-text text-sm">Docker</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-wordpress-plain"></i>
+									<p className="icon-text text-sm">WordPress</p>
 								</li>
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-mongodb-plain"></i>
@@ -206,6 +262,34 @@ export default function AboutSection() {
 								<li className="flex flex-col justify-center items-center">
 									<i className="devicon-bootstrap-plain"></i>
 									<p className="icon-text text-sm">Bootstrap</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-androidstudio-plain"></i>
+									<p className="icon-text text-sm">Studio</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-azuredevops-plain"></i>
+									<p className="icon-text text-sm">Azure Devops</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-blazor-plain"></i>
+									<p className="icon-text text-sm">Blazor</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-electron-original"></i>
+									<p className="icon-text text-sm">Electron</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-express-original"></i>
+									<p className="icon-text text-sm">Express</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-firebase-plain"></i>
+									<p className="icon-text text-sm">Firebase</p>
+								</li>
+								<li className="flex flex-col justify-center items-center">
+									<i className="devicon-rider-plaindevicon-rider-plain"></i>
+									<p className="icon-text text-sm">Rider</p>
 								</li>
 
 								{/* <li>Octopus Deploy</li>
