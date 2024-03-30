@@ -288,7 +288,7 @@ export default function AboutSection() {
 									<p className="icon-text text-sm">Firebase</p>
 								</li>
 								<li className="flex flex-col justify-center items-center">
-									<i className="devicon-rider-plaindevicon-rider-plain"></i>
+									<i className="devicon-rider-plain"></i>
 									<p className="icon-text text-sm">Rider</p>
 								</li>
 
