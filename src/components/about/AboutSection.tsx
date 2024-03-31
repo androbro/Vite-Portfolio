@@ -157,7 +157,7 @@ export default function AboutSection() {
 							className="scroller  background-border"
 							data-speed="slow"
 							data-direction="right"
-							border-color="orange"
+							border-color="blue"
 							style={{ marginBottom: "1rem" }}
 						>
 							<ul className="scroller__inner">
@@ -255,7 +255,7 @@ export default function AboutSection() {
 						<div
 							className="scroller background-border"
 							border-color="red"
-							data-speed="medium"
+							data-speed="green"
 						>
 							<ul className="tag-list scroller__inner">
 								<li className="flex flex-col justify-center items-center">
